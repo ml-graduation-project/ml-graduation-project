@@ -37,13 +37,13 @@ Target: Remaining Useful Life (RUL) or failure event indicator
 
 ## Data Preprocessing
 
-Handling missing values
+- Handling missing values
 
-Normalization and scaling
+- Normalization and scaling
 
-Sequence creation for LSTM (time-series windowing)
+- Sequence creation for LSTM (time-series windowing)
 
-Train-test split by machine/unit
+- Train-test split by machine/unit
 
 ## Machine Learning Models
 
@@ -65,28 +65,28 @@ Visualizations: prediction vs actual degradation plots
 
 ## Tech Stack
 
-Python
+- Python
 
-TensorFlow / Keras
+- TensorFlow / Keras
 
-Scikit-learn
+- Scikit-learn
 
-Pandas, NumPy, Matplotlib, Seaborn
+- Pandas, NumPy, Matplotlib, Seaborn
 
-Streamlit
+- Streamlit
 
 ## Results & Insights
 
-Early fault prediction helps schedule maintenance efficiently.
+- Early fault prediction helps schedule maintenance efficiently.
 
-LSTM achieved higher accuracy in detecting degradation trends.
+- LSTM achieved higher accuracy in detecting degradation trends.
 
-Reduced downtime and maintenance cost in simulated environment.
+- Reduced downtime and maintenance cost in simulated environment.
 
 ## Future Improvements
 
-Incorporate transformer-based models for multivariate time-series.
+- Incorporate transformer-based models for multivariate time-series.
 
-Integrate edge computing for on-device predictions.
+- Integrate edge computing for on-device predictions.
 
-Expand dataset with more diverse sensor types.
+- Expand dataset with more diverse sensor types.
