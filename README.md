@@ -59,7 +59,7 @@ Metrics: R2 score,root mean squared error
 
 LSTM Results: 
 Train Results --> RMSE: 12.16, R²: 0.914
-Test Results --> RMSE: 15.08, R²: 0.865
+Test Results --> RMSE: 15.08, R²: 0.88
 
 Visualizations: prediction vs actual degradation plots
 
