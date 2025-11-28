@@ -19,18 +19,18 @@ st.set_page_config(page_title="RUL Prediction App", layout="wide")
 
 st.title("🛠️ Remaining Useful Life (RUL) Prediction App")
 st.write("Upload your test data (`.txt` or `.csv`) to get RUL predictions using the trained LSTM model.")
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
-MODEL_PATH = os.path.join("models", "best_lstm_fd001.keras")
-SCALER_PATH = os.path.join("artifacts", "scaler.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "models", "best_lstm_fd001.keras")
+SCALER_PATH = os.path.join(BASE_DIR, "artifacts", "scaler.pkl")
 
 try:
     model = load_model(MODEL_PATH)
     scaler = joblib.load(SCALER_PATH)
 except Exception as e:
-    st.error(f" Could not load model or scaler. Please check your paths.\n\n{e}")
+    st.error(f"Could not load model or scaler. Please check your paths.\n\n{e}")
     st.stop()
-
-
+    
 index = ["engine", "cycle"]
 setting = [f"op_setting_{i}" for i in range(1, 4)]
 sensor = [
