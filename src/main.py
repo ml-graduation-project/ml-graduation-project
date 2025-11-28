@@ -1,9 +1,9 @@
 import numpy as np
-from src.data_loader import DataLoader
-from src.data_preprocessor import DataPreprocessor
-from src.feature_engineer import FeatureEngineer
-from src.model_trainer import ModelTrainer
-from src.evaluator import Evaluator
+from data_loader import DataLoader
+from data_preprocessor import DataPreprocessor
+from feature_engineer import FeatureEngineer
+from model_trainer import ModelTrainer
+from evaluator import Evaluator
 
 def main():
     # Load data
